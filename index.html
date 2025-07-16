@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kajal | Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="text-gray-800 font-sans bg-white">
+
+  <!-- Navbar -->
+  <header class="bg-white shadow fixed w-full top-0 z-50">
+    <nav class="container mx-auto p-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-pink-500">Kajal</h1>
+      <div class="space-x-4">
+        <a href="#home" class="hover:text-pink-500">Home</a>
+        <a href="#about" class="hover:text-pink-500">About</a>
+        <a href="#projects" class="hover:text-pink-500">Projects</a>
+        <a href="#contact" class="hover:text-pink-500">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+<section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-r from-pink-400 via-pink-300 to-pink-200 text-white text-center px-4 pt-32">
+  <div>
+    <img src="https://i.pinimg.com/originals/cf/5e/cb/cf5ecb134fa64e4c23c58a71283917c9.jpg" alt="Kajal" class="w-32 h-32 rounded-full mx-auto shadow-lg border-4 border-white mb-4"/>
+    
+    <h2 class="text-4xl font-bold mb-2">Hi, I'm Kajal Kannaujiya</h2>
+    
+    <p class="text-xl font-light mb-6">Aspiring Web Developer & React Learner</p>
+    
+    <a href="#" class="bg-white text-pink-600 font-semibold px-6 py-2 rounded hover:bg-pink-100 transition">Download Resume</a>
+  </div>
+</section>
+
+
+  <!-- About Me -->
+  <section id="about" class="py-20 px-6 md:px-20 bg-white">
+    <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+      <div>
+        <h2 class="text-3xl font-bold text-pink-500 mb-4">About Me</h2>
+        <p>I am a passionate B.Tech student from Kashi Institute of Technology, deeply interested in full-stack web development and data analysis. I enjoy building smart and interactive web applications.</p>
+      </div>
+      <div>
+        <h3 class="font-semibold mb-2">Skills:</h3>
+        <div class="flex flex-wrap gap-3">
+          <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">HTML</span>
+          <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">CSS</span>
+          <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">JavaScript</span>
+          <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">Python</span>
+          <span class="bg-pink-100 text-pink-600 px-3 py-1 rounded-full text-sm">React</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-20 bg-pink-50 px-6 md:px-20">
+    <h2 class="text-3xl font-bold text-center text-pink-600 mb-10">My Projects</h2>
+    <div class="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+      <!-- Card 1 -->
+      <div class="bg-white p-5 rounded-lg shadow hover:scale-105 transition">
+        <img src="http://content.health.harvard.edu/wp-content/uploads/2023/05/b0dc8f35-3126-4eae-b575-38285553c9a4.jpg" alt="project1" class="rounded mb-4">
+        <h3 class="text-lg font-bold text-pink-500 mb-1">Smart Blood Bank</h3>
+        <p class="text-sm text-gray-600 mb-2">Connects hospitals with donors using HTML, CSS & JS.</p>
+        <a href="#" class="text-pink-600 text-sm">View on GitHub →</a>
+      </div>
+      <!-- Card 2 -->
+      <div class="bg-white p-5 rounded-lg shadow hover:scale-105 transition">
+        <img src="https://tse2.mm.bing.net/th/id/OIP.-z2b8oxsFvYaTc4lE9NAXQHaEK?pid=Api&P=0&h=180" alt="project2" class="rounded mb-4">
+        <h3 class="text-lg font-bold text-pink-500 mb-1">Netflix Clone</h3>
+        <p class="text-sm text-gray-600 mb-2">UI replica using HTML, CSS and JS.</p>
+        <a href="#" class="text-pink-600 text-sm">View on GitHub →</a>
+      </div>
+      <!-- Card 3 -->
+      <div class="bg-white p-5 rounded-lg shadow hover:scale-105 transition">
+        <img src="https://www.iloilotoday.com/wp-content/uploads/2022/12/contis-sweet-delights-735x400.jpg" alt="project3" class="rounded mb-4">
+        <h3 class="text-lg font-bold text-pink-500 mb-1">Sweet Delight</h3>
+        <p class="text-sm text-gray-600 mb-2">Dessert ordering website with React frontend.</p>
+        <a href="#" class="text-pink-600 text-sm">View on GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20 bg-white px-6 md:px-20">
+    <h2 class="text-3xl font-bold text-center text-pink-600 mb-10">Contact Me</h2>
+    <form class="max-w-lg mx-auto space-y-4">
+      <input type="text" placeholder="Your Name" class="p-3 w-full border rounded" />
+      <input type="email" placeholder="Your Email" class="p-3 w-full border rounded" />
+      <textarea rows="4" placeholder="Your Message" class="p-3 w-full border rounded"></textarea>
+      <button type="submit" class="bg-pink-500 text-white px-6 py-2 rounded hover:bg-pink-600 transition">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-pink-100 text-center py-6">
+    <p class="text-sm text-pink-700">© 2025 Kajal Kannaujiya</p>
+    <div class="mt-2 space-x-4">
+      <a href="#" class="text-pink-600 hover:underline">LinkedIn</a>
+      <a href="#" class="text-pink-600 hover:underline">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>
